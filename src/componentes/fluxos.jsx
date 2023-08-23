@@ -1,10 +1,10 @@
 
-const Fluxo = () => {
+const Fluxo = ({cor, numero, texto}) => {
   return (
     <>
-     <div className="xl:bg-[#86D7A2] h-[20vh] w-[400px] flex items-center rounded-lg justify-center p-2">
-        <h1 className="text-[70px] w-[20%] flex items-center justify-center">1</h1>
-        <p className="text-[18px] w-[75%] text-justify">Lorem ipsum dolor sit amet consectetu. Eius beatae repellendus exercitationem est eaque dicta sint rem deleniti iure tenetur .</p>
+     <div className={`xl:h-[17vh] shadow-xl shadow-[#A8A6A6] p-2 2xl:h-[25vh] w-[45vh] flex items-center rounded-lg justify-center  ${cor} 2xl:`}>
+        <h1 className="xl:text-[60px] 2xl:text-[70px] w-[20%] flex items-center justify-center">{numero}</h1>
+        <p className="text-[18px] w-[75%] text-justify 2xl:text-[22px]">{texto}</p>
      </div>
     </>
   );

@@ -3,7 +3,7 @@ const Flexa = () => {
   return (
     <>
       <div className="">
-        <img className="w-[80px] h-[80px]" src={flexa} alt="" />
+        <img className="w-[70px] h-[70px]" src={flexa} alt="" />
       </div>
     </>
   );
