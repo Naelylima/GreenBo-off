@@ -5,7 +5,7 @@ const Topicos = ({img,titulo, texto}) => {
                 <img className='xl:h-[70px] w-[70px] mr-[1vh] 2xl:h-[90px] 2xl:w-[90px]' src={img} alt="" />
                 <div className="text-justify">
                     <h1 className='xl:text-[16px] font-bold 2xl:text-[22px]'>{titulo}</h1>
-                    <p className="2xl: text-[20px]">{texto}</p>
+                    <p className="xl:text-[20px] 2xl: text-[20px]">{texto}</p>
                 </div>
             </div>
         </>
