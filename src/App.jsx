@@ -11,7 +11,11 @@ import aspas from "./assets/aspas.png";
 import turma from "./assets/turma.jpg";
 import robert from "./assets/robert-bosch.svg";
 import BoxCitacao from "./componentes/boxCitacoes";
-import flexaDireita from './assets/seta-down.png'
+import naely from './assets/naely.jpg'
+import capo from './assets/capo.jpg'
+import luiza from './assets/luiza.jpg'
+import michael from './assets/michael.jpg'
+// import flexaDireita from './assets/seta-down.png'
 import Foto from "./componentes/fotos";
 
 function App() {
@@ -23,15 +27,14 @@ function App() {
       <Slide />
       {/* TAG PORQUE BLOCKCHAIN? */}
       <hr class="w-[100%] h-px my-8 bg-gray-200 border-[0px] border-black"></hr>
-
       <div className="w-full flex justify-center h-[90vh] items-center">
         <div className="bg-[#D1E4FF] shadow-xl shadow-[#A8A6A6] w-[90%] h-[70vh] rounded-[16px] p-[3vh] flex items-center flex-col 2xl:">
           <div className="titulo flex items-center justify-center">
-            <h1 className="xl:text-[50px] 2xl:text-[8vh]">
+            <h1 className="xl:text-[7vh] 2xl:text-[9vh]">
               Por que a blockchain?
             </h1>
           </div>
-          <div className="xl:textos w-[70%] text-center text-[22px] p-[2vh] h-[80%] flex items-center 2xl:text-[32px]">
+          <div className="xl:textos w-[80%] text-center text-[3vh] p-[2vh] h-[80%] flex items-center 2xl:text-[32px] 2xl:w-[70%]">
             <p>
               Ela é uma tecnologia que permite a descentralização de informação,
               por realizar o registro de informações de uma forma que torna
@@ -66,7 +69,7 @@ function App() {
         </div>
       </div>
       {/* TAG Como o GreenBo funciona? */}
-      <div className="Fluxograma xl:h-[70vh] 2xl:h-[90vh] w-full ">
+      <div className="Fluxograma xl:h-[90vh] 2xl:h-[90vh] w-full ">
         <div className="flex items-center">
           <h1 className="xl:text-[45px] w-[50%] flex justify-center 2xl:text-[6vh]">
             Como o GreenBo funciona?
@@ -133,15 +136,15 @@ function App() {
         <div className="">
           {/* Titulo */}
           <div className="flex items-center">
-            <h1 className="xl:text-[5vh] flex justify-center w-[35%] 2xl:text-[6vh] 2xl:w-[40%] ">
+            <h1 className="xl:text-[5vh] flex justify-center w-[40%] 2xl:text-[6vh] 2xl:w-[40%] ">
               Responsabilidades
             </h1>
-            <hr class="xl:w-[65%] h-px my-8 bg-gray-200 border-[0.5px] border-black 2xl:w-[60%] "></hr>
+            <hr class="xl:w-[65%] h-px my-8 bg-gray-200 border-[0.5px] border-black 2xl:w-[65%] "></hr>
           </div>
           <div className="xl:w-full justify-center flex 2xl:justify-evenly">
             <div className="Box1 xl:flex w-[50%] justify-center flex-col 2xl:w-[50%]">
               <img className="xl:h-[15px] w-[15px]" src={aspas} alt="" />
-              <p className="xl:text-[28px] w-full italic flex h-[27vh] items-center 2xl:h-[25vh] 2xl:text-[37px] 2xl:w-full">
+              <p className="xl:text-[3.5vh] w-full italic flex h-[27vh] items-center 2xl:h-[25vh] 2xl:text-[37px] 2xl:w-full">
                 No espírito do nosso fundador, demonstramos, particularmente,
                 responsabilidade social e ambiental – onde quer que façamos
                 negócios
@@ -154,7 +157,7 @@ function App() {
           </div>
         </div>
         {/* Box de citações */}
-        <div className="xl:flex w-[90%] h-[35vh] items-center justify-between">
+        <div className="xl:flex w-[90%] h-[35vh] items-center justify-around">
           <BoxCitacao
             texto={
               "Na Bosch, priorizamos realizar ações que gerem resultados efetivos e que possam ser comprovados em nossa cadeia de valor e para a sociedade, alinhados ao nosso propósito de tecnologia para a vida."
@@ -172,10 +175,10 @@ function App() {
       <div className="xl:h-[75vh] bg-[#9dc9ff7a]  2xl:w-full h-[80vh] items-center flex justify-center">
         <div className="xl:flex 2xl:w-[90%] justify-evenly">
           <div className="flex flex-col w-[45%] justify-center text-justify">
-            <h1 className="xl:text-[4.5vh] xl:h-[10vh] 2xl:text-[6vh] 2xl:h-[12vh]">
+            <h1 className="xl:text-[4.4vh] xl:h-[10vh] 2xl:text-[6vh] 2xl:h-[12vh]">
               A primeria versão do GreenBo
             </h1>
-            <p className="xl:text-[18px] 2xl:text-[26px] leading-[2] ">
+            <p className="xl:text-[22px] 2xl:text-[26px] leading-[2] ">
               O GreenBo foi desenvolvido durante a 4ª Edição do Hackathon, uma
               semana de competição interna dentro da CaP/ETS, pelos aprendizes
               do curso Técnico de Mecatrônica e Digital Solutios, sendo eles:
@@ -197,10 +200,10 @@ function App() {
             <h1 className="xl:text-[4.5vh]">Entre em contato conosco</h1>
           </div>
           <div className="fotos xl:w-full justify-evenly flex">
-            <Foto nome_area={'Lucas Capovila'} area={'CaP/ETS'}/>
-            <Foto nome_area={'Luiza Moraes'} area={'CaP/ETS'} />
-            <Foto nome_area={'Michael Douglas'} area={'CaP/ETS'}/>
-            <Foto nome_area={'Naely Pereira'} area={'CaP/ETS'}/>
+            <Foto nome_area={'Lucas Capovila'} area={'CaP/ETS'} foto={capo}/>
+            <Foto nome_area={'Luiza Moraes'} area={'CaP/ETS'} foto={luiza} />
+            <Foto nome_area={'Michael Douglas'} area={'CaP/ETS'} foto={michael}/>
+            <Foto nome_area={'Naely Pereira'} area={'CaP/ETS'} foto={naely}/>
           </div>
 
         </div>
