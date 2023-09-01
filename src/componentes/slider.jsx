@@ -16,7 +16,7 @@ const Slide = () => {
           <img
             src={GreeBo}
             alt=""
-            className="xl:w-[50vh] h-[45vh] 2xl:w-[65vh] 2xl:h-[65vh]"
+            className=" xl:w-[50vh] h-[45vh] 2xl:w-[65vh] 2xl:h-[65vh]"
           />
         </div>
       </div>

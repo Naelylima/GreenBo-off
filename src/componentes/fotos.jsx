@@ -1,14 +1,15 @@
+const Foto = ({ nome_area: nome, area, foto }) => {
+  return (
+    <>
+      <div className="flex flex-col items-center">
+        <div
+          className={`xl:w-[25vh] h-[25vh] flex flex-col items-center rounded-[100%]  ${foto} bg-cover`}
+        ></div>
 
-const Foto = ({ nome_area, area, foto }) => {
-    return (
-        < >
-
-            <div className="xl:w-[200px] h-[200px] flex flex-col items-center rounded-[100%] border-[1px] border-black">
-                <img src={foto} alt="" />
-                <h1>{nome_area}</h1>
-                <h1>{area}</h1>
-            </div>
-        </>
-    );
+        <h1 className="text-[25px] mt-4">{nome}</h1>
+        <h1 className="text-[20px]">{area}</h1>
+      </div>
+    </>
+  );
 };
 export default Foto;
