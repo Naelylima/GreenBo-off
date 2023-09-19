@@ -12,7 +12,6 @@ function InsercaoDados() {
     <>
       <div className="items-center content-center">
         <NavBar pagina={"login"} />
-
         <div className="grid ml-[10vh] mr-[10vh]">
           <hr class="xl:w-[100%] h-px my-5 bg-gray-200 border-[0px] border-black"></hr>
           <div className="">

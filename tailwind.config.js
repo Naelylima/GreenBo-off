@@ -15,7 +15,10 @@ export default {
         'michael': "url('./src/assets/michael.jpg')",
         'luiza': "url('./src/assets/luiza.jpg')",
 
-      }
+      },
+      animation: {
+        'bounce-teste': 'bounce 5s infinite',
+      },
     },
   },
   plugins: [],

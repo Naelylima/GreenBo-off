@@ -18,7 +18,6 @@ const ChartComponent = () => {
     ],
     chart: {
       height: "auto",
-      width: "auto",
       type: "line",
     },
     responsive: [{
@@ -71,15 +70,15 @@ const ChartComponent = () => {
   };
 
   return (
-    <div id="chart" className="w-full h-full justify-center p-1 items-center flex rounded-[15px] border-[#DADADA] shadow-md shadow-[#A8A6A6]  border">
+   
       <ReactApexChart
         options={options}
         series={options.series}
         type="line"
-        width={740}
+  
         height={350}
       />
-    </div>
+  
   );
 };
 

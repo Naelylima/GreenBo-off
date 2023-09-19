@@ -1,4 +1,5 @@
 import GreeBo from "../assets/GreenBo.png";
+<link rel="stylesheet" href="../App.css" />
 
 const Slide = () => {
   return (
@@ -12,11 +13,12 @@ const Slide = () => {
             <span className="text-[#86D7A2]"> Eficiência Energética</span>{" "}
           </h1>
         </div>
-        <div className="justify-center flex items-center">
+        <div className="justify-center flex items-center" id="img">
           <img
             src={GreeBo}
             alt=""
-            className=" xl:w-[50vh] h-[45vh] 2xl:w-[65vh] 2xl:h-[65vh]"
+            className=" xl:w-[50vh] h-[45vh]  2xl:w-[65vh] 2xl:h-[65vh] "
+            
           />
         </div>
       </div>

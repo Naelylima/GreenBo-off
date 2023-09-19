@@ -33,11 +33,11 @@ function Graficos() {
           />
         </div>
         {/* Chart */}
-        <div className="xl:flex h-[50vh] items-center justify-between">
-          <div className="xl:w-[49%] h-[40vh] 2xl:w-[45%]">
+        <div className="xl:flex h-[55vh] items-center justify-between 2xl:h-[50vh]">
+          <div className="xl:w-[49%] p-5 2xl:w-[45%] rounded-[15px] border-[#DADADA] shadow-md shadow-[#A8A6A6] border 2xl:">
             <ChartComponent />
           </div>
-          <div className="w-[49%] h-[40vh]  2xl:">
+          <div className="w-[49%] p-5  rounded-[15px] border-[#DADADA] shadow-md shadow-[#A8A6A6] border  2xl:">
             <ChartComponent />
           </div>
         </div>
@@ -55,7 +55,7 @@ function Graficos() {
               <CardMoeda />
             </div>
           </div>
-          <div className="xl:w-[50%] 2xl:w-[49%]">
+          <div className="xl:w-[50%] p-5 rounded-[15px] border-[#DADADA] shadow-md shadow-[#A8A6A6]  border 2xl:w-[49%]">
             <ChartComponent />
           </div>
         </div>
