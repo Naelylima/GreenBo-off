@@ -21,10 +21,10 @@ const NavBar = ({ pagina }) => {
           {pagina == "cadastro" || pagina == "login" ? (
             <>
               <div className="atalhos xl:flex justify-around w-[40vh] mr-[10vh] 2xl:text-[20px] ">
-                <p className="text-black">Entre em contato conosco</p>
-                <a
+                <p className="xl:text-black text-[18px]">Entre em contato conosco</p>
+                <a c
                   onClick={() => navigate("/")}
-                  className=" text-black hover:cursor-pointer"
+                  className=" xl:text-black hover:cursor-pointer text-[18px]"
                 >
                   Home
                 </a>
@@ -35,9 +35,9 @@ const NavBar = ({ pagina }) => {
               <div className="atalhos xl:flex justify-around w-[35vh] mr-[10vh] 2xl:text-[20px]">
                 <div className="">
                   <img src="" alt="" />
-                  <a href="">Entre em contato conosco</a>
+                  <a className="xl: text-[18px]" href="">Entre em contato conosco</a>
                 </div>
-                <a onClick={() => navigate("/login")} className="hover:cursor-pointer">Login</a>
+                <a onClick={() => navigate("/login")} className="hover:cursor-pointer text-[18px]">Login</a>
               </div>
             </>
           )}

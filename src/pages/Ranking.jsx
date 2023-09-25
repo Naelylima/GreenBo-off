@@ -41,10 +41,10 @@ function Ranking() {
         </div>
           {/* Ranking column */}
           <div className="flex justify-between items-end ">
-            <div className="xl:w-[55%] p-5 2xl:w-[50%] rounded-[15px] border-[#DADADA] shadow-md shadow-[#A8A6A6] border ">
+            <div className="xl:w-[50%] p-5 2xl:w-[50%] rounded-[15px] border-[#DADADA] shadow-md shadow-[#A8A6A6] border ">
               <GraficoRanking />
             </div>
-            <div className="w-[40%] flex items-end content-end justify-between 2xl:w-[40%]">
+            <div className="w-[45%] flex items-end content-end justify-between 2xl:w-[40%]">
               <ChartColumn
                 h={"xl:h-[48vh] 2xl:h-[47vh]"}
                 bg={"bg-[#007BC0]"}

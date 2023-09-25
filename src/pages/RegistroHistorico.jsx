@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import InputDados from "../componentes/inputDados";
 import car from "../assets/transporter-car-front.svg";
 import eficiencia from "../assets/efficiency.svg";
+import BoxHistorico from "../componentes/boxHistorico";
 
 function RegistroHistorico() {
   let navigate = useNavigate();
@@ -22,12 +23,12 @@ function RegistroHistorico() {
             </h1>
 
             {/* Escopos 1 e 2 */}
-            <div className="xl:flex justify-between w-[35%] 2xl:w-[32%]">
+            <div className="xl:flex justify-between w-[40%] 2xl:w-[32%]">
               <div className="">
                 <input
                   type="search"
                   placeholder="Buscar Formulário"
-                  className="xl:h-[6vh] w-[20vh] outline-none border p-4 rounded-md border-[#BCBFC0] 2xl:h-[7vh] 2xl:w-[27vh] "
+                  className="xl:h-[6vh] w-[27vh] outline-none border p-4 rounded-md border-[#BCBFC0] 2xl:h-[7vh] 2xl:w-[27vh] "
                 />
               </div>
               <div className="">
@@ -43,40 +44,37 @@ function RegistroHistorico() {
           <div className="mt-[0.5vh]">
             <div className="xl:border font-medium h-[6vh] rounded-md w-full border-[#AFB7BA] bg-[#EFF3F6] flex justify-between items-center text-[18px] 2xl:text-[22px] 2xl:h-[7vh]">
               <p className="w-[20%] ml-[5vh] flex justify-start 2xl:">
-                Tipo de dado
+                Domínio
               </p>
-              <p className="w-[15%] flex justify-center">Última atualização</p>
-              <p className="w-[15%] flex justify-center">Unidade Medida</p>
-              <p className="w-[15%] flex justify-center">Dados</p>
+              <p className="w-[15%] flex justify-center">Data</p>
+              <p className="w-[15%] flex justify-center">Hash</p>
+              <p className="w-[15%] flex justify-center">Edit</p>
             </div>
           </div>
 
           {/* Inputs de dados */}
           <div className="xl:mt-[2vh] h-[52vh] 2xl:h-[50vh]">
-            <InputDados
-              foto={car}
-              tipo={"Escopo 1"}
-              medida={"Kg"}
-              data={"25/10/2023"}
+            <BoxHistorico
+              dominio={'Emissões Co2'}
+              data={'24/07/2023'}
+              hash={'0xn23uu8fwen23e38e2908whfwef'}
             />
-            <InputDados
-              foto={eficiencia}
-              tipo={"Escopo 2"}
-              data={"25/10/2023"}
-              medida={"m²"}
+            <BoxHistorico
+              dominio={'Emissões Co2'}
+              data={'24/07/2023'}
+              hash={'0xn23uu8fwen23e38e2908whfwef'}
             />
-            <InputDados
-              foto={eficiencia}
-              tipo={"Escopo 2"}
-              data={"25/10/2023"}
-              medida={"m²"}
+            <BoxHistorico
+              dominio={'Emissões Co2'}
+              data={'24/07/2023'}
+              hash={'0xn23uu8fwen23e38e2908whfwef'}
             />
-            <InputDados
-              foto={eficiencia}
-              tipo={"Escopo 3"}
-              data={"25/10/2023"}
-              medida={"m²"}
+            <BoxHistorico
+              dominio={'Emissões Co2'}
+              data={'24/07/2023'}
+              hash={'0xn23uu8fwen23e38e2908whfwef'}
             />
+           
           </div>
           {/* Botão salvar */}
           <div className="w-full flex justify-end">
